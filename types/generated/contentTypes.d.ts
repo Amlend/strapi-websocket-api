@@ -368,12 +368,12 @@ export interface ApiMessageMessage extends Schema.CollectionType {
     singularName: 'message';
     pluralName: 'messages';
     displayName: 'Message';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    user: Attribute.String;
     message: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
